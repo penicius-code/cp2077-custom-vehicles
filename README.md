@@ -5,6 +5,11 @@ Custom Vehicles 1.2.5 | Vehicle Bench 1.2.1 | Built on game version 2.31, small 
 
 > This is an unofficial fan work and is not approved/endorsed by CD PROJEKT RED. No game files are included.
 
+<p>
+<img src="docs/media/bench-trace.png" width="480" alt="Bench traces of the same add-on bike on 1.2.0, 1.2.1 and 1.2.2: speed and engine rpm against time from a standing start. On 1.2.0 the rpm jumps in first gear while speed lags (wheelspin); 1.2.1 and 1.2.2 launch cleanly.">
+<img src="docs/media/plan-table.png" width="480" alt="Excerpt of the planner output: target and planned 0-100, 0-200 and top speed per vehicle, and a check that the regenerated data file is identical to the shipped one">
+</p>
+
 ## The problem
 
 A vehicle overhaul mod retunes the game's cars and bikes by record name. Add-on vehicles from other mods that were copied from a vanilla record before that overhaul ran still drive like stock, and add-on vehicles with their own engine have numbers that fit neither. On top of that, a vehicle's 0-100 km/h time and top speed cannot be read from the game's data: the drivetrain is simulated natively, and the speedometer shows speed multiplied by a curve, not the real speed.
@@ -109,12 +114,6 @@ python tools/realism_check.py                      check every vehicle against i
 **A second finding from measuring.** The first plan used assumed constants for the game's drivetrain model. Bench runs showed the real ones, so `bench_fit.py` now fits them from traces, and from 1.2.0 the plan uses measured constants.
 
 **Rollback.** Every version was installed with a backup of the previous files. All changes are in memory, so removing the folder restores stock behaviour at the next start.
-
-## Media
-
-![Bench traces of the same add-on bike on 1.2.0, 1.2.1 and 1.2.2: speed and engine rpm against time from a standing start. On 1.2.0 the rpm jumps in first gear while speed lags (wheelspin); 1.2.1 and 1.2.2 launch cleanly.](docs/media/bench-trace.png)
-
-![Excerpt of the planner output: target and planned 0-100, 0-200 and top speed per vehicle, and a check that the regenerated data file is identical to the shipped one](docs/media/plan-table.png)
 
 ## Changelog
 
