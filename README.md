@@ -3,6 +3,8 @@
 Vehicle performance tuned from measurements, for Cyberpunk 2077: a bench logger times real acceleration and top speed in the game, fitting scripts turn those numbers into drivetrain values, and a small mod applies them. Single-player only.
 Custom Vehicles 1.2.5 | Vehicle Bench 1.2.1 | Built on game version 2.31, small fixes on 2.5 | Status: 1.0.0 to 1.2.2 benched in game; 1.2.3 to 1.2.5 not yet play-tested
 
+**Download:** [latest release](https://github.com/penicius-code/cp2077-custom-vehicles/releases/latest) (zip; install steps below)
+
 > This is an unofficial fan work and is not approved/endorsed by CD PROJEKT RED. No game files are included.
 
 <p>
@@ -54,7 +56,7 @@ Vehicle Bench needs only Cyber Engine Tweaks. The add-on vehicle mods named in t
 ## Install
 
 1. Install the requirements above.
-2. Copy the `bin` folder from `package/` into the game folder. Copy only `CyberslopVehicleBench` if you want just the logger.
+2. Download the zip from the [latest release](https://github.com/penicius-code/cp2077-custom-vehicles/releases/latest) (the same files as `package/` in this repository) and extract it into the game folder. Copy only `CyberslopVehicleBench` if you want just the logger.
 3. Start the game. Custom Vehicles writes what it applied to `CyberslopCustomVehicles.log` in its folder; in the CET console, `GetMod("CyberslopCustomVehicles").status()` prints a summary.
 
 ## Uninstall / roll back
