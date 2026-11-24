@@ -34,7 +34,7 @@ jobs:
           done
 
   python:
-    name: Python check (ruff: syntax errors and undefined names)
+    name: Python check (ruff, syntax errors and undefined names)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
