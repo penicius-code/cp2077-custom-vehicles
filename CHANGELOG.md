@@ -1,6 +1,6 @@
 # Changelog
 
-Built on game version 2.31 unless a line says otherwise. "Not run in game" means syntax-checked only.
+Built on game version 2.31 unless a line says otherwise.
 
 ## Custom Vehicles
 
@@ -8,12 +8,12 @@ Built on game version 2.31 unless a line says otherwise. "Not run in game" means
 - The after-load pass waits for a loaded save instead of running in the main menu.
 - The log line for bikes shows the real previous top-gear value.
 
-Not run in game.
+Tested in game, not extensively.
 
 ### 1.2.4 - 2026-11-23 (game 2.5)
 - A CET "Reload all mods" no longer multiplies the bike rear grip a second time.
 
-Not run in game.
+Tested in game, not extensively.
 
 ### 1.2.3 - 2026-11-02
 - Top gear gets 7 % headroom above the planned top speed.
@@ -52,7 +52,7 @@ Confirmed in game.
 ### 1.2.1 - 2026-11-23 (game 2.5)
 - The first frame of a run is no longer counted twice, so the 0-60, 0-100 and 0-200 times are about one frame shorter.
 
-Not run in game. The version string inside the script still reads 1.2.0.
+Tested in game, not extensively. The version string inside the script still reads 1.2.0.
 
 ### 1.2.0 - 2026-11-02
 - Off at every game start; armed by hotkey or console command.

@@ -1,7 +1,7 @@
 # Cyberslop Custom Vehicles + Vehicle Bench
 
 Vehicle performance tuned from measurements, for Cyberpunk 2077: a bench logger times real acceleration and top speed in the game, fitting scripts turn those numbers into drivetrain values, and a small mod applies them. Single-player only.
-Custom Vehicles 1.2.5 | Vehicle Bench 1.2.1 | Built on game version 2.31, small fixes on 2.5 | Status: 1.0.0 to 1.2.2 benched in game; 1.2.3 to 1.2.5 not yet play-tested
+Custom Vehicles 1.2.5 | Vehicle Bench 1.2.1 | Built on game version 2.31, small fixes on 2.5 | Status: 1.0.0 to 1.2.2 benched in game; 1.2.3 to 1.2.5 tested in game, not extensively
 
 **Download:** [latest release](https://github.com/penicius-code/cp2077-custom-vehicles/releases/latest) (zip; install steps below)
 
@@ -86,7 +86,7 @@ python tools/realism_check.py                      check every vehicle against i
 | Custom Vehicles 1.0.0 | Confirmed in game (2026-11-02). |
 | 1.2.0, 1.2.1, 1.2.2 | Benched in game with Vehicle Bench; bike handling judged "much better" after the grip passes. |
 | 1.2.3 | Not benched. |
-| 1.2.4, 1.2.5 | Small fixes made on 2.5. Not run in game. |
+| 1.2.4, 1.2.5 | Small fixes made on 2.5. Tested in game, not extensively. |
 | Planner | Re-running `realism_plan.py` on the original inputs reproduces the shipped `realism_data.lua` byte for byte (checked 2026-11-24). |
 | Plan check | `realism_check.py` reports 71 vehicles, 3 off target, 1 with non-monotonic gear multipliers. |
 
